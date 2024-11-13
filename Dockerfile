@@ -8,6 +8,7 @@ RUN tar -xvf apache-tomcat-9.0.97.tar.gz
 RUN mv apache-tomcat-9.0.97 /opt/
 RUN cd /opt
 RUN mkdir warfile/
+RUN wget https://github.com/thisismanikandan/java-apm-jpetstore/blob/main/jpetstore.war
 COPY jpetstore.war /opt/warfile/
 RUN mv /opt/warfile/jpetstore.war /opt/apache-tomcat-9.0.97/webapps/
 RUN /opt/apache-tomcat-9.0.97/bin/shutdown.sh run
