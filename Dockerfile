@@ -9,7 +9,7 @@ RUN mv apache-tomcat-9.0.97 /opt/
 RUN cd /opt
 RUN mkdir warfile/
 COPY jpetstore.war /opt/warfile/
-RUN mv /opt/warfile/jpetstore.war /opt/apache-tomcat-9.0.76/webapps/
+RUN mv /opt/warfile/jpetstore.war /opt/apache-tomcat-9.0.97/webapps/
 RUN /opt/apache-tomcat-9.0.97/bin/shutdown.sh run
 RUN cd /opt
 RUN mkdir java-apm
